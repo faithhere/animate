@@ -1,0 +1,154 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: consolas;
+    
+}
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-color: #131313;  
+}
+.container{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 0;
+    flex-wrap: wrap;
+}
+.container .box{
+    position: relative;
+    width: 320px;
+    height: 400px;
+    color:#ffff;    
+    background: #1111;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin:20px 30px;   
+    transition: 0.5s;
+    left: 600px;
+}
+.container .box:hover{
+    transform: translateY(-20px);
+}
+.container .box::before{
+    content:'';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(45deg,#ffbc00,#ff0058);
+    
+}
+.container .box::after{
+    content:'';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(45deg,#ffbc00,#ff0058);
+    filter: blur(30px);
+}
+.container .box span{
+    position: absolute;
+    top: 6px;
+    left: 6px;
+    right: 6px;
+    bottom: 6px;
+    background: rgba(0,0,0,0.6);
+    z-index: 2;
+}
+.container .box span::before{
+    content:'';
+    position: absolute;
+    top:0;  
+    left: 0;
+    width: 50%;
+    height: 100%;
+    background: rgba(255,255,255,0.1);
+    pointer-events: none;
+}
+.container .box .content{
+    position: relative;
+    z-index: 10;
+    padding: 20px 40px;
+}
+.content .box .content h2{
+    font-size: 2em;
+    color: white;
+    margin-bottom: 10px;
+}
+.content .box .content p{
+    font-size: 1.1em;
+    color: white;
+    margin-bottom: 10px;
+}
+
+/*BABY CUBES*/
+.new{
+    width: 200px;
+    height: 200px;
+    perspective: 1000px;
+    margin: 100px auto 0;
+}
+.cubing{
+    transform-style: preserve-3d;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    animation: spin 5s infinite linear;
+    right: 600px;
+}
+.face{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background:url(images/REDEFINE.jpg) ;
+    
+
+}
+    .top{
+        transform:rotateX(90deg) translateZ(100px) ;  
+       
+    }
+    .bottom{
+        transform: rotateX(-90deg) translateZ(100px) ;   
+       
+    }
+      .right{
+        transform: rotateY(90deg)translateZ(100px) ; 
+    }
+    .left{
+        transform: rotateY(-90deg) translateZ(100px) ;  
+             
+    }.front{
+        transform:rotateX(0deg) translateZ(100px) ;   
+       
+    }.back{
+        transform: rotateX(-180deg)translateZ(100px) ; 
+       
+            
+    }
+
+    @keyframes spin {
+        from{
+            transform: rotateX(0deg) rotateY(0deg);
+        }
+        to{
+            transform: rotateX(270deg) rotateY(180deg);
+         
+        }
+    }
+    .word{
+        text-align: center;
+        justify-content: center;
+        color: white;
+        bottom: 1000px;   
+    }

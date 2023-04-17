@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SECTIONS</title>
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script> 
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css">
+    <link rel="stylesheet" href="products.css">
+    <script defer src="products.js"></script>
+    
+</head>
+<body>
+  
+  
+   <section class="container">
+       <div class="swiper">
+    <!-- Additional required wrapper -->
+    <div class="swiper-wrapper">
+      <!-- Slides -->
+      <div class="swiper-slide"><img src="images/modify.jpg"><div class="texty  texty1"><h2>High quality pictures with age and complexion modification</h2></div></div>
+      <div class="swiper-slide"><img src="images/manz.jfif"><div class="texty  texty2"><h2>Get yourself an A.I Virtual friend</h2></div></div>
+      <div class="swiper-slide"><img src="images/TEXTING.jpg"><div class="texty  texty3"><h2>Keep up with your friends and meet new ones</h2></div></div>
+      <div class="swiper-slide"><img src="images/idea.jpg"><div class="texty  texty4"><h2>Start national conversations on widely ignored topics</h2></div></div>
+      <div class="swiper-slide"><img src="images/banking.jpg"><div class="texty  texty5"><h2>Carry out your money transactions</h2></div></div>
+    
+    </div>
+    <!-- If we need pagination -->
+    <div class="swiper-pagination"></div>
+    <!--if we need navigation buttons-->
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-button-next"></div>
+  </div>
+    </div>
+                       
+   <script src="app.js"></script>
+   <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+   <script>
+    const swiper = new Swiper('.swiper', {
+        autoplay:{
+            delay:3000,
+            disableOnInteraction:false,
+        },
+  
+  loop: true,
+
+    pagination: {
+    el: '.swiper-pagination',
+    clickable:true,
+   },
+  
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+  
+});
+
+   </script>
+   </section>
+</body>
+<!---TYPING --->
+<section class="TYPING">
+  <div class="container1">
+  <div class="box box1">
+  <h1> POST:<span class="auto-type"></span></h1>
+  <script src="https://unpkg.com/typed.js@2.0.15/dist/typed.umd.js"></script>
+  <script>
+    var typed=  new Typed(".auto-type",{
+      strings:[ "Special Moments","Creative Moments","Everyday Moments","Hilarious Moments"],
+      typeSpeed:150,
+      backSpeed:150,
+      loop:true
+ })  
+  </script>
+</div>
+<div class="blob">
+   <div class="people">
+
+   </div>
+  
+</div>
+</section>
+ 
+
+  
+<!----VIDEOS--->
+<section class="VIDEOS">
+    <style>div{
+        background-color: #000;
+    }</style>
+        
+         <video width="320"height="240"controls>
+         <source src="images/happy long dance.mp4"type="video/mp4">
+          </video>
+           <video width="320"height="240"controls>
+           <source src="images/production.mp4"type="video/mp4">
+             </video>
+              <video width="320"height="240"controls>
+                <source src="images/soap.mp4" type="video/mp4">
+                  </video>
+                  <video width="320"height="240"controls>
+                    <source src="images/blessing.mp4" type="video/mp4">
+                      </video>
+            </video>
+              </video>
+            </ul>
+        </div>
+       </section>
+       <!-- //VIDEOS -->
+
+   
+</html>

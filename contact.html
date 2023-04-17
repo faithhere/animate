@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet"href="contact.css">
+    <link rel="stylesheet"href="contact.js">
+    <link rel="stylesheet" href=" https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css  "> 
+<link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<script type="text/javascript"
+src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+</script>
+<script type="text/javascript">
+(function(){
+emailjs.init("38o4DCDRegJd_6Uz4");
+})();
+</script>
+    <title>Document</title>
+</head>
+<body>
+    <div class="background-image">
+                <div class="text">
+            <div id="jump">
+                <span style="--i:1">C</span>
+                <span style="--i:2">O</span>
+                <span style="--i:3">N</span>
+                <span style="--i:4">T</span>
+                <span style="--i:5">A</span>
+                <span style="--i:6">C</span>
+                <span style="--i:7">T</span>
+                <span style="--i:8">-</span>
+                <span style="--i:9">U</span>
+                <span style="--i:10">S</span>
+             <h3><span>SPAPP</span>@<span>gmail.com</span></h3>
+          </div>
+      </div>
+      <div class="hero">
+                <form>
+                    <div class="row">
+                       
+                    </div>
+            <div class="input-group">
+            <input type= "text" id="name" required>
+            <label for="name"><i class="fas fa-user"></i> Name</label>
+            </div>
+            <div class="input-group">
+                <input type= "text" id="number" required>
+                <label for="number"><i class="fas fa-phone-square-alt"></i>Phone No.</label>
+                </div>
+                <div class="input-group">
+                    <input type= "email" id="email" required>
+                    <label for="email"><i class="fas fa-envelope"></i> Email</label>
+                    </div>
+                    <div class="input-group">
+                        <textarea id= "message" rows="8" required></textarea>
+                        <label for="message"><i class="fas fa-comments"></i>Message Us</label>
+                        </div>
+                        <button type="submit"onclick="sendMail()">SUBMIT><i class="fas fa-paper-plane" ></i></button>
+           </form>
+        </div>
+    </div>
+</body>
+<style>
+    
+    *{
+        margin: 0;
+        padding: 0;
+    }
+    .background-image{
+        background-image: url('images/contact.jpg');
+        background-size: cover;
+        background-repeat: no-repeat;
+        height:100vh;
+    }
+          
+        footer{
+        position: relative;
+        width: 100%;
+        background:#3586ff;
+        min-height: 10px;
+        padding: 20px 50px;
+        flex-direction: column;
+    }
+    .waves{
+        position: relative;
+        top: -50px;
+       
+        width: 100%;
+        height: 100px;
+        background: url(images/wave.png);   
+        background-size: 1000px 100px;
+    } 
+    .waves{
+        z-index: 1000;
+        opacity: 1;
+        bottom: 0;
+        animation: animatewave 4s linear infinite;
+    } 
+    footer.wave#wave2{
+        z-index: 999;
+        opacity: 0.5;
+        bottom: 10px;
+        animation: animatewave_02 4s linear infinite;
+    } 
+    @keyframes animatewave{
+        0%{
+            background-position-x: 1000px;
+        }
+        100%{
+            background-position-x:0px ;
+        }
+    }
+    @keyframes animatewave_02{
+        0%{
+            background-position-x: 0px;
+        }
+        100%{
+            background-position-x:1000px ;
+        }
+    }
+            
+    </style>
+    <footer>
+             <div class="waves">
+            <div class="footer">                
+            <div class="wave" id="wave1"></div>
+            <div class="wave" id="wave2"></div>
+            <div class="wave" id="wave3"></div>
+            <div class="wave" id="wave4"></div>
+            </div>
+            <div class="socialicon">
+                <a href=""><i class="fa-brands fa-facebook"></i></a>
+                <a href=""><i class="fa-brands fa-instagram"></i></a>
+                <a href=""><i class="fa-brands fa-twitter"></i></a>
+                <a href=""><i class="fa-brands fa-linkedin"></i></a>
+                <a href=""><i class="fa-brands fa-youtube"></i></a>
+        </div>
+        <div class="footerNav">
+            <ul>
+                <li><a href="">HOME</a></li>
+            <li><a href="">PRODUCT</a></li>
+            <li><a href="">ABOUT</a></li>
+            <li><a href="">CONTACT</a></li>
+        </ul>
+        </div>
+        </div>
+        </socialicon>
+        </footerNav>
+        </div>
+    </ul>
+    </footer>
+</html>

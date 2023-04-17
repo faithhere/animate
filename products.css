@@ -1,0 +1,202 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #000;
+}
+.swiper-wrapper{
+   height: 100vh;
+   width: 100%;
+}
+.swiper{
+    background-color: #000;
+    display: flex;
+    overflow-x: hidden;
+    width: 100%;
+    height: 100vh;
+    
+    
+}
+.swiper-slide img{
+   position: relative;
+   cursor: pointer;
+   transition: 4000ms;
+   background-size: cover;
+   height: 100vh;
+   max-width: 100%;
+   background-position: cover;
+   object-fit: cover;
+   object-position: center;
+   
+}
+
+.swiper-slide img:hover{
+   transform: scale(1.03);
+}
+
+.container{
+   width: 100%;
+   height: 100vh;
+   background: #000;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   left: 0;
+   top: 0;
+   
+}
+.swiper{
+    width: 100%;
+    position: absolute;
+    height:100%;
+    display: flex;
+}
+.swiper-slide img{
+   width: 100%;
+   -webkit-box-reflect: below 1px linear-gradient(transparent,transparent,#0006);
+}
+.swiper .swiper-button-prev, .swiper .swiper-button-next{
+    color: white;
+}
+.swiper .swiper-pagination-bullet-active{
+    background-color: white;
+}
+.texty{
+   width: 600px;
+   overflow:hidden;  
+   position: absolute;
+   top: 10px;
+   left: 100px;
+   color: white;
+   background: transparent;
+   animation: textup 4.0s ease infinite ;
+         
+}
+.h2{
+   font-size: 14px;
+   line-height: 18px;
+   margin-top: 80px;
+   
+}
+@keyframes textup {
+   0%{
+      transform: translateY(250px);
+   }
+   100%{
+      transform: translateY(0px);
+   }
+}
+/*TYPING */
+.container1  {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+    background-color: black;
+}
+.container1{
+   display: inline-flex;
+}
+.box  h1{
+ font-size: 80px;
+ color: white;
+ font-weight: 600;
+}
+span{
+   color: coral;
+}
+.blob body{
+   background: radial-gradient(#024d5a,#091813);
+}
+.blob{
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   height: 100vh;
+   
+}
+.people{
+   background: url(images/RACES.jpg);
+   -webkit-background-size:cover ;
+   background-size: cover;
+   background-position: center center;
+   height: 550px;
+   width: 550px;
+   box-shadow: transparent;
+   animation: animate 5s ease-in-out infinite;
+   transition: all 1s ease-in-out;
+}
+@keyframes animate {
+   0%{
+      border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
+   }
+   50%{
+      border-radius: 30% 60% 70% 40%/50% 60% 30% 60%;
+   }
+   100%{
+      border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
+   }
+}
+.texty1{
+   animation-delay: 0s;
+}
+.texty2{
+   animation-delay: 1s;
+}.texty3{
+   animation-delay: 2s;
+}.texty4{
+   animation-delay: 4s;
+}.texty5{
+   animation-delay: 3s;
+}
+
+/*VIDEOS*/
+.navigation{
+   transform: translateX(-50%);
+   z-index: 100;
+   display: flex;
+   cursor: pointer;
+   transition: 0.5s;
+}
+.navigation:hover{
+
+}
+/*FOOTER*/
+.footer{ 
+   width:100%; 
+   height: auto;
+   position: relative;
+   display: flex;
+   margin: 20px;
+     
+}
+
+.footer .pack.pack1{
+   background: blue;
+   clip-path: polygon(0 0,24% 0,23% 100%,0% 100%);
+}
+.footer .pack.pack2{
+   background: yellow;
+   clip-path: polygon(23% 0,49% 0,48% 100%,22% 100%);
+}
+.footer .pack.pack3{
+   background: greenyellow;
+   clip-path: polygon(48% 0,75% 0,74% 100%,47% 100%);
+}
+.footer .pack.pack4{
+   background: orange;
+   clip-path: polygon(74% 0,100% 0,100% 100%,74% 100%);
+}
+.footer .pack.active{
+   clip-path: polygon(0 1%,100% 0,100% 100%,0% 100%); 
+}
+.footer .pack:hover{
+   z-index: 1000;
+}
+.footer .pack video{
+   position: absolute;
+   margin: 20px;
+   bottom: 0;
+   right: 0;
+   left: 0;
+   
+}
